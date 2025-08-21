@@ -1,4 +1,4 @@
-<!doctypehtml>
+<!DOCTYPE html>
   <html data-bs-theme=dark dir=rtl lang=fa>
   <meta charset=utf-8>
   <meta content="width=device-width,initial-scale=1" name=viewport>
@@ -1332,16 +1332,9 @@
             this.avatarUrl = savedAvatar;
           }
 
-          const savedGuideMode = localStorage.getItem('guideMode');
-          if (savedGuideMode) {
-            this.guideMode = savedGuideMode;
-            if (savedGuideMode === 'advanced') {
-              this.advancedContentLoaded = true;
-            }
-          } else {
-            this.guideMode = 'easy';
-            localStorage.setItem('guideMode', 'easy');
-          }
+          this.guideMode = 'advanced';
+          this.advancedContentLoaded = true;
+
 
           document.addEventListener('show-qr', async function (e) {
             await loadQRCode();
@@ -1371,7 +1364,6 @@
             localStorage.setItem('guideMode', value);
           });
         },
-
 
         toggleTheme() {
           this.darkMode = !this.darkMode;
@@ -2821,3 +2813,4 @@
       </div>
     </div>
 </body>
+</html>
