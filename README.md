@@ -57,7 +57,7 @@
 </div>
 
 ```bash
-sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/Mrclocks/Pro-Subscription-Template/main/index.html
+sudo wget -N -P /var/lib/marzban/templates/subscription/ https://raw.githubusercontent.com/WhoisNeon/Pro-Subscription-Template/main/index.html
 ```
 
 <div>
