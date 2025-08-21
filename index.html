@@ -2,7 +2,7 @@
 <html data-bs-theme=dark dir=rtl lang=fa>
 <meta charset=utf-8>
 <meta content="width=device-width,initial-scale=1" name=viewport>
-<title>سرویس والت وی‌پی‌ان</title>
+<title>والت وی‌پی‌ان</title>
 <link href=https://i.imgur.com/OrWOzAC.png rel="shortcut icon" type=image/x-icon>
 <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500&display=swap" rel=preload as=style>
 <link href=https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css rel=preload as=style>
@@ -240,6 +240,13 @@
 
   .my-block-big {
     padding: 1.5rem
+  }
+
+  .text-truncate{
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    white-space: pre-wrap;
   }
 
   .traffic-value {
@@ -1000,7 +1007,7 @@
 
       translations: {
         fa: {
-          subscriptionInfo: 'سرویس والت وی‌پی‌ان',
+          subscriptionInfo: 'والت وی‌پی‌ان',
           username: 'نام کاربری',
           status: 'وضعیت',
           duration: 'مدت زمان',
@@ -1056,7 +1063,7 @@
           sub_last_user_agent: 'آخرین برنامه',
           loading: 'در حال بارگذاری...',
           no_usage_data: 'اطلاعات موجود نیست',
-          less_than_minute: 'حدود یک دقیقه پیش',
+          less_than_minute: 'یک دقیقه پیش',
           minute: 'دقیقه',
           hour: 'ساعت',
           day: 'روز',
@@ -1068,7 +1075,7 @@
           allConfigs: 'تمام کانفیگ ها'
         },
         en: {
-          subscriptionInfo: 'Walt VPN Subscription',
+          subscriptionInfo: 'Walt VPN',
           username: 'Username',
           status: 'Status',
           duration: 'Duration',
@@ -1124,7 +1131,7 @@
           sub_last_user_agent: 'Last Client',
           loading: 'Loading...',
           no_usage_data: 'No data available',
-          less_than_minute: 'About a minute ago',
+          less_than_minute: 'a minute ago',
           minute: 'minute',
           hour: 'hour',
           day: 'day',
@@ -1269,9 +1276,9 @@
         localStorage.setItem('lang', this.currentLang);
 
         if (this.currentLang === 'en') {
-          document.title = 'Walt VPN Subscription';
+          document.title = 'Walt VPN';
         } else {
-          document.title = 'سرویس والت وی‌پی‌ان';
+          document.title = 'والت وی‌پی‌ان';
         }
       },
 
