@@ -1723,7 +1723,8 @@
               <h3 class="mb-0 box-texts" x-text="translations[currentLang].sub_last_user_agent"></h3>
             </div>
             <p class="mb-0 sub-texts text-truncate"
-              x-text="subLastUserAgent.startsWith('{') ? translations[currentLang].unknown : subLastUserAgent"></p>
+              x-html="subLastUserAgent.startsWith('{') ? translations[currentLang].unknown : subLastUserAgent"
+              :dir="subLastUserAgent.startsWith('{') ? '' : 'ltr'"></p>
           </article>
         </div>
       </section>
